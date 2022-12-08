@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Vollkorn', serif;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+}
+:root {
+  --primary-color: #2b81e4;
+  --secondary-color: #eee;
+  --white-color: #fff;
+  --gray-color: #555;
+  --light-gray-color: #777;
+}
+.hidden {
+  display: none;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: var(--secondary-color);
+  margin: 25px;
+  box-shadow: 0 20px 30px var(--gray-color);
+  overflow: hidden;
+}
+
+.navbar-icon {
+  width: 45px;
+  height: 45px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  cursor: pointer;
+  flex-direction: column;
+  border: 0.5px solid rgb(119, 119, 119, 0.5);
+  box-shadow: 1px 1px 1px var(--light-gray-color);
+}
+.open-navbar-icon {
+  position: fixed;
+  top: 7%;
+  left: 5%;
+  z-index: 200;
+}
+.navbar-icon .line {
+  width: 20px;
+  height: 2.5px;
+  background-color: var(--light-gray-color);
+}
+.open-navbar-icon .line {
+  margin: 2px 0;
+}
+.navbar-wrapper {
+  position: absolute;
+  width: 25%;
+  background-color: var(--white-color);
+  padding: 0px 5px 0px 25px;
+  border-radius: 5px;
+  top: 7.5%;
+  left: 7%;
+  z-index: 100;
+}
+.nav-list {
+  display: flex;
+}
+.nav-link {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gray-color);
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.header {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 7%;
+  right: 4%;
+  position: fixed;
+}
+.logo h1 {
+  display: flex;
+}
+.logo h1 span {
+  font-size: 25px;
+  font-weight: 900;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  background-color: var(--white-color);
+  width: 40px;
+  height: 40px;
+  margin: 7px;
+  border-radius: 50%;
+}
+
+.logo h1 span:nth-child(1) {
+  animation-name: drop-letter;
+  animation-duration: 5s;
+  animation-delay: 0.1s;
+  animation-iteration-count: infinite;
+}
+.logo h1 span:nth-child(2) {
+  animation-name: drop-letter;
+  animation-duration: 5s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+.logo h1 span:nth-child(3) {
+  animation-name: drop-letter;
+  animation-duration: 5s;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+}
+.logo h1 span:nth-child(4) {
+  animation-name: drop-letter;
+  animation-duration: 5s;
+  animation-delay: 0.4s;
+  animation-iteration-count: infinite;
+}
+.logo h1 span:nth-child(5) {
+  animation-name: drop-letter;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+.logo h1 span:nth-child(6) {
+  animation-name: drop-letter;
+  animation-duration: 5s;
+  animation-delay: 0.6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes drop-letter {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(-30%);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.header-img {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background: center no-repeat;
+}
+.reservation-title {
+  position: absolute;
+  top: 15%;
+  left: 27%;
+  font-size: 50px;
+  color: var(--gray-color);
+}
+.table-content {
+  position: absolute;
+  width: 90%;
+  top: 27%;
+  left: 5%;
+  font-size: 18px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px var(--light-gray-color);
+}
+.table-head tr th,
+.table-body tr th {
+  border-bottom: 2px solid rgb(119, 119, 119, 0.2);
+}
+.table-identificator {
+  width: 30px;
+}
+.table-head-field {
+  width: 130px;
+}
+
+.table-btn {
+  line-height: 18px;
+}
+.table-btn a {
+  font-size: 15px;
+  color: var(--gray-color);
+}
+
+#create-reservation-btn {
+  margin: 20px;
+  position: absolute;
+  right: 0%;
+  padding: 10px 25px;
+  font-size: 18px;
+  background-color: var(--light-gray-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 3px 3px 3px var(--gray-color);
+}

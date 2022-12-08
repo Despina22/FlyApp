@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Vollkorn', serif;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+}
+:root {
+  --primary-color: #2b81e4;
+  --secondary-color: #eee;
+  --white-color: #fff;
+  --gray-color: #555;
+  --light-gray-color: #777;
+}
+.hidden {
+  display: none;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: var(--secondary-color);
+  margin: 25px;
+  box-shadow: 0 20px 30px var(--gray-color);
+  overflow: hidden;
+}
+
+.navbar-icon {
+  width: 45px;
+  height: 45px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  cursor: pointer;
+  flex-direction: column;
+  border: 0.5px solid rgb(119, 119, 119, 0.5);
+  box-shadow: 1px 1px 1px var(--light-gray-color);
+}
+.open-navbar-icon {
+  position: fixed;
+  top: 7%;
+  left: 5%;
+  z-index: 200;
+}
+.navbar-icon .line {
+  width: 20px;
+  height: 2.5px;
+  background-color: var(--light-gray-color);
+}
+.open-navbar-icon .line {
+  margin: 2px 0;
+}
+.navbar-wrapper {
+  position: absolute;
+  width: 25%;
+  background-color: var(--white-color);
+  padding: 0px 5px 0px 25px;
+  border-radius: 5px;
+  top: 7.5%;
+  left: 7%;
+  z-index: 100;
+}
+.nav-list {
+  display: flex;
+}
+.nav-link {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gray-color);
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.header {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 7%;
+  right: 4%;
+  position: fixed;
+}
+.logo h1 {
+  display: flex;
+}
+.logo h1 span {
+  font-size: 25px;
+  font-weight: 900;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  background-color: var(--white-color);
+  width: 40px;
+  height: 40px;
+  margin: 7px;
+  border-radius: 50%;
+}
+
+.logo h1 span:nth-child(1) {
+  animation-name: drop-letter;
+  animation-duration: 5s;
+  animation-delay: 0.1s;
+  animation-iteration-count: infinite;
+}
+.logo h1 span:nth-child(2) {
+  animation-name: drop-letter;
+  animation-duration: 5s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+.logo h1 span:nth-child(3) {
+  animation-name: drop-letter;
+  animation-duration: 5s;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+}
+.logo h1 span:nth-child(4) {
+  animation-name: drop-letter;
+  animation-duration: 5s;
+  animation-delay: 0.4s;
+  animation-iteration-count: infinite;
+}
+.logo h1 span:nth-child(5) {
+  animation-name: drop-letter;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+.logo h1 span:nth-child(6) {
+  animation-name: drop-letter;
+  animation-duration: 5s;
+  animation-delay: 0.6s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes drop-letter {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(-30%);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.header-img {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background: center no-repeat;
+}
+.reservation-form-header {
+  position: absolute;
+  top: 15%;
+  left: 37%;
+  font-size: 50px;
+  color: var(--gray-color);
+}
+.reservation-form {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+  background-color: rgb(238, 238, 238, 0.9);
+  padding: 40px 20px;
+}
+
+.input-element {
+  font-size: 25px;
+  margin: 10px 40px 10px 20px;
+  padding: 10px 20px 10px 10px;
+  border-radius: 5px;
+  border: transparent;
+  box-shadow: 3px 3px 3px var(--light-gray-color);
+  width: 90%;
+  color: var(--gray-color);
+}
+.reservation-form div div {
+  font-size: 15px;
+  margin: 0px 40px 15px 20px;
+  width: 90%;
+  color: var(--gray-color);
+}
+.destination-dropdown {
+  font-size: 25px;
+  margin: 10px 40px 10px 20px;
+  padding: 10px 185px 10px 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 3px 3px 3px var(--light-gray-color);
+  width: 90%;
+  color: var(--gray-color);
+}
+.create-btn {
+  margin-top: 20px;
+  font-size: 25px;
+  padding: 10px 70px;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px var(--light-gray-color);
+}
+.create-btn:hover {
+  background-color: var(--white-color);
+  color: var(--light-gray-color);
+}
+
+.registration-success-message {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  background-color: var(--secondary-color);
+  width: 40%;
+  color: rgb(45, 182, 45);
+  align-items: center;
+  border-radius: 5px;
+  animation: success-message 1s ease-in;
+}
+.congrtulation-message {
+  font-size: 35px;
+  margin: 25px 10px 10px;
+  text-align: center;
+}
+.registration-success {
+  font-size: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+@keyframes success-message {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.error-message i,
+.error-message p {
+  color: rgb(192, 73, 73);
+}
+.error-message-input,
+.destination-dropdown-error {
+  border: 2px solid rgb(192, 73, 73);
+  box-shadow: 2px 2px 2px rgb(192, 73, 73);
+}

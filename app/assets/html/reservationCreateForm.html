@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&family=Vollkorn:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/reservationCreateForm.css" />
+    <link rel="icon" href="../images/air-balloon.png" />
+    <title>Fly App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="open-navbar-icon navbar-icon center">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="navbar-wrapper hidden">
+        <nav class="navbar">
+          <div class="nav-list">
+            <a href="#" class="nav-link center" id="home-link">Home</a>
+            <a href="#" class="nav-link center" id="reservation-link"
+              >Reservation</a
+            >
+            <a href="#" class="nav-link center" id="login-link">Login</a>
+            <a href="#" class="nav-link center" id="logout-link">Logout</a>
+          </div>
+        </nav>
+      </div>
+
+      <header class="header center">
+        <img src="../images/bg-4.jpg" alt="" class="header-img" />
+        <div class="logo">
+          <h1>
+            <span class="center">f</span>
+            <span class="center">l</span>
+            <span class="center">y</span>
+            <span class="center">a</span>
+            <span class="center">p</span>
+            <span class="center">p</span>
+          </h1>
+        </div>
+      </header>
+
+      <div class="reservation-content-form">
+        <h1 class="reservation-form-header">New reservation</h1>
+        <form action="#" class="reservation-form">
+          <div class="first-name">
+            <label for="firstName"></label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="First Name"
+              required
+              class="input-element"
+            />
+            <div class="error-message hidden">
+              <p>
+                <i class="fa-solid fa-triangle-exclamation"></i>Please enter a
+                valid first name
+              </p>
+            </div>
+          </div>
+
+          <div class="last-name">
+            <label for="lastName"></label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Last Name"
+              required
+              class="input-element"
+            />
+            <div class="error-message hidden">
+              <p>
+                <i class="fa-solid fa-triangle-exclamation"></i>Please enter a
+                valid last name
+              </p>
+            </div>
+          </div>
+
+          <div class="email-input">
+            <label for="emil"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+              class="input-element"
+            />
+            <div class="error-message hidden">
+              <p>
+                <i class="fa-solid fa-triangle-exclamation"></i>Please enter a
+                valid email
+              </p>
+            </div>
+          </div>
+
+          <div class="phone-number-input">
+            <label for="phoneNumber"></label>
+            <input
+              type="text"
+              name="phoneNumber"
+              id="phoneNumber"
+              placeholder="Phone Number"
+              required
+              class="input-element"
+            />
+            <div class="error-message hidden">
+              <p>
+                <i class="fa-solid fa-triangle-exclamation"></i>Please enter a
+                valid phone number
+              </p>
+            </div>
+          </div>
+
+          <div class="number-of-persons">
+            <label for="numberOfPersons"></label>
+            <input
+              type="text"
+              name="numberOfPersons"
+              id="numberOfPersons"
+              placeholder="Number of Persons"
+              required
+              class="input-element"
+            />
+            <div class="error-message hidden">
+              <p>
+                <i class="fa-solid fa-triangle-exclamation"></i>Please enter a
+                valid number of persons
+              </p>
+            </div>
+          </div>
+
+          <div class="destination">
+            <label for="destination"></label>
+            <select
+              name="destination-dropdown"
+              id="destination"
+              class="destination-dropdown"
+            ></select>
+            <div class="error-message hidden">
+              <p>
+                <i class="fa-solid fa-triangle-exclamation"></i>Please select a
+                destination
+              </p>
+            </div>
+          </div>
+
+          <div class="btn">
+            <button type="button" class="create-btn" disabled>Create</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="registration-success-message hidden">
+        <p class="congrtulation-message">Congratulation!!!</p>
+        <p class="registration-success">
+          You registration was successful! <i class="fa-solid fa-check"></i>
+        </p>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="../js/componentsCreateForm/scriptFormCreate.js"
+    ></script>
+  </body>
+</html>
