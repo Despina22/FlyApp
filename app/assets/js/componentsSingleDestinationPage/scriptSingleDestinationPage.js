@@ -1,9 +1,7 @@
 import { RenderSingleDestination } from './renderSingleDestination.js';
-import { API_DESTINATION_URL } from '../shared/config.js';
-import { Destinations } from '../http/http.destinations.shared.js';
+import httpDestination from '../http/http.destinations.shared.js';
 import { Navigation } from '../shared/navigation.js';
 
-const httpDestination = new Destinations(API_DESTINATION_URL);
 const renderSingleDestination = new RenderSingleDestination();
 const navigation = new Navigation();
 

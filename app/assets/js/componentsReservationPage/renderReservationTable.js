@@ -1,17 +1,13 @@
-import {
-  API_CREATE_RESERVATION,
-  API_DESTINATION_URL,
-} from '../shared/config.js';
-import { Destinations } from '../http/http.destinations.shared.js';
+import { API_CREATE_RESERVATION } from '../shared/config.js';
+import httpDestination from '../http/http.destinations.shared.js';
 import { Reservation } from '../http/http.reservation.js';
 
 export class RenderReservationTable {
-  httpDestinations = new Destinations(API_DESTINATION_URL);
   httpReservation = new Reservation(API_CREATE_RESERVATION);
   table = document.querySelector('.table-of-reservations');
 
   async renderTableWithReservations(reservations) {
-    const data = await this.httpDestinations.getDestination();
+    const data = await httpDestination.getDestination();
     reservations.forEach(reservation => {
       const {
         id,

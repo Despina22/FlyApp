@@ -1,6 +1,5 @@
-import { ErrorMessage } from '../shared/errorMessage.js';
-
-export class RegexValidation {
+import errorMessage from '../shared/errorMessage.js';
+class RegexValidation {
   firstNameInput = document.getElementById('firstName');
   lastNameInput = document.getElementById('lastName');
   emailInput = document.getElementById('email');
@@ -8,26 +7,31 @@ export class RegexValidation {
   numberOfPersons = document.getElementById('numberOfPersons');
   destination = document.getElementById('destination');
 
-  errorMessageStyle = new ErrorMessage();
+  constructor() {
+    if (RegexValidation.instance == null) {
+      RegexValidation.instance = this;
+    }
+    return RegexValidation.instance;
+  }
 
   validateForm() {
     const regexFirstName = /^[A-Z][a-z]{2,50}$/;
     const isFirstNameValid = regexFirstName.test(this.firstNameInput.value);
-    this.errorMessageStyle.renderErrorMessageForInvalidInput(
+    errorMessage.renderErrorMessageForInvalidInput(
       !isFirstNameValid,
       this.firstNameInput
     );
 
     const regexLastName = /^[A-Z][a-z]{2,50}$/;
     const isLastNameValid = regexLastName.test(this.lastNameInput.value);
-    this.errorMessageStyle.renderErrorMessageForInvalidInput(
+    errorMessage.renderErrorMessageForInvalidInput(
       !isLastNameValid,
       this.lastNameInput
     );
 
     const regexEmail = new RegExp(/^[\w\-\.]{3,}@[a-z]+(\.[a-z]{2,5})+$/);
     const isEmailValid = regexEmail.test(this.emailInput.value);
-    this.errorMessageStyle.renderErrorMessageForInvalidInput(
+    errorMessage.renderErrorMessageForInvalidInput(
       !isEmailValid,
       this.emailInput
     );
@@ -36,7 +40,7 @@ export class RegexValidation {
     const isPhoneNumberValid = regexPhoneNumber.test(
       this.phoneNumberInput.value
     );
-    this.errorMessageStyle.renderErrorMessageForInvalidInput(
+    errorMessage.renderErrorMessageForInvalidInput(
       !isPhoneNumberValid,
       this.phoneNumberInput
     );
@@ -45,7 +49,7 @@ export class RegexValidation {
     const isNumberOfPersonsValid = regexNumberOfPersons.test(
       this.numberOfPersons.value
     );
-    this.errorMessageStyle.renderErrorMessageForInvalidInput(
+    errorMessage.renderErrorMessageForInvalidInput(
       !isNumberOfPersonsValid,
       this.numberOfPersons
     );
@@ -59,3 +63,7 @@ export class RegexValidation {
     return isFormValid;
   }
 }
+
+const regexValidation = new RegexValidation();
+Object.freeze(regexValidation);
+export default regexValidation;

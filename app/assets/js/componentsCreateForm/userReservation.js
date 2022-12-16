@@ -1,8 +1,7 @@
 import { Reservation } from '../http/http.reservation.js';
-import { RegexValidation } from '../componentsCreateForm/regexValidation.js';
+import regexValidation from '../componentsCreateForm/regexValidation.js';
 
 export class UserReservation {
-  regexValidation = new RegexValidation();
   reservation = new Reservation();
 
   firstNameInput = document.getElementById('firstName');
@@ -24,7 +23,7 @@ export class UserReservation {
   }
 
   async userReservation() {
-    const isAllInputsValid = this.regexValidation.validateForm();
+    const isAllInputsValid = regexValidation.validateForm();
     if (isAllInputsValid) {
       const userInputValues = this.getReservationInputValues();
       await this.reservation.createReservation(userInputValues);

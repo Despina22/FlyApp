@@ -1,4 +1,10 @@
-export class ErrorMessage {
+class ErrorMessage {
+  constructor() {
+    if (ErrorMessage.instance === null) {
+      ErrorMessage.instance = this;
+    }
+    return ErrorMessage.instance;
+  }
   destination = document.querySelector('.destination');
 
   renderError(errorMessage) {
@@ -25,3 +31,7 @@ export class ErrorMessage {
     }
   }
 }
+
+const errorMessage = new ErrorMessage();
+Object.freeze(errorMessage);
+export default errorMessage;

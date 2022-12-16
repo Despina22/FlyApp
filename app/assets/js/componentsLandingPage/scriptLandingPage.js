@@ -2,10 +2,8 @@ import { Navigation } from '../shared/navigation.js';
 import { Pagination } from './pagination.js';
 import { RenderDestinations } from './renderDestinations.js';
 import { SearchDestinations } from './searchDestinations.js';
-import { API_DESTINATION_URL } from '../shared/config.js';
-import { Destinations } from '../http/http.destinations.shared.js';
+import httpDestination from '../http/http.destinations.shared.js';
 
-const httpDestination = new Destinations(API_DESTINATION_URL);
 const renderDestination = new RenderDestinations();
 const destinationsPagination = new Pagination();
 const searchDestinations = new SearchDestinations();

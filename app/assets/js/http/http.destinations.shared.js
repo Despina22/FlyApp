@@ -1,7 +1,13 @@
-export class Destinations {
+import { API_DESTINATION_URL } from '../shared/config.js';
+
+class Destinations {
   API_DESTINATION_URL;
   constructor(url) {
-    this.API_DESTINATION_URL = url;
+    if (Destinations.instance == null) {
+      this.API_DESTINATION_URL = url;
+      Destinations.instance = this;
+    }
+    return Destinations.instance;
   }
 
   async getDestination() {
@@ -22,3 +28,7 @@ export class Destinations {
     });
   }
 }
+
+const httpDestination = new Destinations(API_DESTINATION_URL);
+Object.freeze(httpDestination);
+export default httpDestination;
