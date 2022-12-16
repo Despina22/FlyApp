@@ -1,0 +1,69 @@
+{
+  "destination": [
+    {
+      "id": 1,
+      "title": "Cappadocia",
+      "imagePath": "https://tourscanner.com/blog/wp-content/uploads/2022/07/things-to-do-in-Cappadocia-Turkey.jpg",
+      "price": "399",
+      "description": "The ancient region of Cappadocia is located in central Anatolia between the cities of Nevsehir, Nigde and Kayseri. Millions of years ago violent eruptions of the volcanoes Mount Erciyes and Mount Hasan covered the surrounding plateau with tuff. Wind and weather have eroded the soft volcanic rock into hundreds of strangely shaped pillars, cones and fairy chimneys, in colours ranging from pink to green and yellow. Since antiquity, people have hollowed out these soft rocks, and they have made countless cave churches, chapels and monasteries.",
+      "from": "2022-12-05",
+      "to": "2022-12-15"
+    },
+    {
+      "id": 2,
+      "title": "Venice",
+      "imagePath": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/04/07/16/istock-491391396.jpg?quality=75&width=1200&auto=webp",
+      "price": "349",
+      "description": "Venice Italy is an Italian city located in the northeast of the State. Venice, Venezia in Italian, is best known for its beauty, canals, architecture, and art. But there is more! This small city founded in the middle of a lagoon has been one the most powerful European States for several centuries, giving birth to a culture and lifestyle that are incredibly unique. Often called the Serenissima, after the successful government which ruled the city, Venice has been for centuries the favourite city of artists and inventors. Many habits, words, and things currently part of our daily life were born in this small but immensely important city.",
+      "from": "2023-01-10",
+      "to": "2023-01-17"
+    },
+    {
+      "id": 3,
+      "title": "Paris",
+      "imagePath": "https://www.travelandleisure.com/thmb/SPUPzO88ZXq6P4Sm4mC5Xuinoik=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/eiffel-tower-paris-france-EIFFEL0217-6ccc3553e98946f18c893018d5b42bde.jpg",
+      "price": "449",
+      "description": "Paris, the city of Lights, the fashion capital, the city of Love. All these nicknames are far from enough to reveal all of Paris.Paris is one of the most beautiful cities in the world. It is known worldwide for the Louvre Museum, Notre-Dame cathedral, and the Eiffel tower. It has a reputation of being a romantic and cultural city. The city is also known for its high-quality gastronomy and the terraces of its cafés.Paris is an old city with much History.Prehistoric vestiges have been found in Paris, but we only really know the History of the city since the Gallo-Roman times, when Paris was called Lutecia.",
+      "from": "2023-01-12",
+      "to": "2023-01-20"
+    },
+    {
+      "id": 4,
+      "title": "Barcelona",
+      "imagePath": "https://www.fodors.com/wp-content/uploads/2022/03/Hero-UPDATEBarcelona-iStock-1320014700-1.jpg",
+      "price": "569",
+      "description": "Barcelona is a city with a wide range of original leisure options that encourage you to visit time and time again. Overlooking the Mediterranean Sea, and famous for Gaudí and other Art Nouveau architecture, Barcelona is one of Europe’s trendiest cities.It’s a hub of new trends in the world of culture, fashion and cuisine. It combines the creativity of its artists and designers with respect and care for local traditions. The charm and slower pace of the old town, the avant-garde vibe of more modern neighbourhoods, and the fast pace of one of the world’s most visited cities coexist in Barcelona.",
+      "from": "2022-12-15",
+      "to": "2022-12-22"
+    },
+    {
+      "id": 5,
+      "title": "Marocco",
+      "imagePath": "https://www.investireinmarocco.it/wp-content/uploads/2014/05/argenio-group-marocco-places-1024x675.jpg",
+      "price": "899",
+      "description": "Destination Morocco, a Nations Online country profile of the Arab kingdom in the western part of the Maghreb in North Africa, officially known as the Kingdom of Morocco.The country borders the Atlantic Ocean in the west, the Mediterranean Sea in the north; it shares maritime borders with Portugal and Spain.Morocco borders Algeria in the east and Western Sahara in the south. The non-self-governing territory, claimed by Morocco, borders Mauritania in the Moroccan-controlled part of Western Sahara.Morocco has a land border with Spain at the Spanish exclaves of Ceuta and Melilla, the two populated Spanish territories on the African mainland.",
+      "from": "2023-02-01",
+      "to": "2023-02-07"
+    },
+    {
+      "id": 6,
+      "title": "Istanbul",
+      "imagePath": "https://a.cdn-hotels.com/gdcs/production6/d781/3bae040b-2afb-4b11-9542-859eeb8ebaf1.jpg",
+      "price": "199",
+      "description": "Istanbul is a world center of great importance in the past and present. The city embraces Asia on the one hand and Europe on the other. Istanbul is Turkey's most populous city and its cultural and financial center. Located on both sides of the Bosphorus, the narrow strait between the Black Sea and the Marmara Sea, Istanbul bridges Asia and Europe both physically and culturally. With its historical peninsula, numerous scenic and historical sites, Istanbul is a magnificently unique city that has been the capital to many civilizations from past to present and still continues to be home to residents from all over the world. Istanbul's population is estimated between 12 and 19 million, making it one of the largest cities in Europe and the world.",
+      "from": "2022-12-30",
+      "to": "2023-01-05"
+    }
+  ],
+  "reservation": [
+    {
+      "firstName": "Despina",
+      "lastName": "Stankovska",
+      "email": "despina@yahoo.com",
+      "phoneNumber": "+38978421036",
+      "numberOfPersons": "1",
+      "destinationId": "2",
+      "id": 1
+    }
+  ]
+}
